@@ -1,0 +1,49 @@
+/* 代码块:更明显的圆角和轻微阴影,减少默认样式的“扁平感” */
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+.md-typeset .highlight {
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* 表格:斑马纹 + 更清晰的表头 */
+.md-typeset table:not([class]) {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* admonition(note/warning/danger):加粗左边框颜色区分度 */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+  border-width: 0 0 0 4px;
+}
+
+/* mermaid图表:居中,给个浅色背景框,深浅色模式都好看 */
+.mermaid {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--md-default-fg-color--lightest);
+  margin: 1.5rem 0;
+}
+
+/* 首页/章节标题:字重加强一点,层次更清晰 */
+.md-typeset h1 {
+  font-weight: 700;
+}
+.md-typeset h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.3rem;
+}
