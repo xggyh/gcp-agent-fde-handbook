@@ -1,0 +1,63 @@
+site_name: GCP Agent 实战手册 · FDE 上手版
+site_description: 用 Google ADK + Vertex AI(Gemini Enterprise Agent Platform) 端到端搭一个客服 agent 的完整实战记录
+theme:
+  name: material
+  language: zh
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.top
+  - navigation.tracking
+  - navigation.indexes
+  - navigation.footer
+  - search.highlight
+  - search.suggest
+  - content.code.copy
+  - toc.follow
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    toggle:
+      icon: material/weather-night
+      name: 切换到深色模式
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    toggle:
+      icon: material/weather-sunny
+      name: 切换到浅色模式
+  icon:
+    repo: fontawesome/brands/github
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- footnotes
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+plugins:
+- search: {}
+nav:
+- 第 0 章 · Overview: index.md
+- 第 1 章 · 环境搭建: 01-setup.md
+- 第 2 章 · 基础 Agent 与工具集成: 02-basic-agent.md
+- 第 3 章 · RAG 知识检索: 03-rag.md
+- 第 4 章 · Model Armor 护栏: 04-guardrail.md
+- 第 5 章 · 可观测性(Trace/Logging): 05-observability.md
+- 第 6 章 · 部署上线: 06-deployment.md
+- 第 7 章 · LLM 评估: 07-evaluation.md
+- 第 8 章 · 优化方向与附录: 08-optimization.md
+site_url: https://xggyh.github.io/gcp-agent-fde-handbook/
+repo_url: https://github.com/xggyh/gcp-agent-fde-handbook
+repo_name: gcp-agent-fde-handbook
