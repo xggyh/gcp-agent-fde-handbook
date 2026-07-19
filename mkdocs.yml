@@ -5,8 +5,6 @@ theme:
   language: zh
   font: false
   features:
-  - navigation.tabs
-  - navigation.tabs.sticky
   - navigation.top
   - navigation.tracking
   - navigation.indexes
