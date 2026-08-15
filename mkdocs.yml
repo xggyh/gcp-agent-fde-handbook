@@ -71,6 +71,8 @@ nav:
 - 第 7 章 · LLM 评估: 07-evaluation.md
 - 第 8 章 · 工程化(IaC/测试/CI): 08-engineering.md
 - 第 9 章 · 优化方向与附录: 09-optimization.md
+- 第 10 章 · 成本模型与选型: 10-cost-and-selection.md
+- 第 11 章 · 企业边界与数据驻留: 11-enterprise-boundary.md
 site_url: https://xggyh.github.io/gcp-agent-fde-handbook/
 repo_url: https://github.com/xggyh/gcp-agent-fde-handbook
 repo_name: gcp-agent-fde-handbook
